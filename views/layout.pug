@@ -1,0 +1,17 @@
+block variables 
+    head
+        title #{title} | Premier League
+        block scripts 
+            link(rel="stylesheet" type="text/css" href="/style/style.css")
+    body
+        header#header 
+            .header-content
+                ul#headerUl 
+                    li.headerLi
+                        a(href="/stat") Premier League
+                    li.headerLi
+                        a(href="/layout") Top Scorer 
+        main#main 
+            block main-content 
+        footer#footer 
+            p &copy;Azmat Pathan, 2023.

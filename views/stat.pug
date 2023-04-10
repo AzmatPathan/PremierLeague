@@ -1,0 +1,19 @@
+extends layout 
+
+block main-content
+
+   h1#h1 Player List
+    .playerContainer
+        each player in stat
+        
+            each p in player.STATISTICS
+                each pList in p.PLAYERS_LIST
+                    .listContainer
+                    p#player Player Name: #{pList.PLAYER_NAME} 
+                    each pPoint in pList.PLAYER_POINTS_LIST
+                        p#player Player Points:  #{pPoint}
+                    p#player Team Name: #{pList.TEAM_NAME}
+                    
+
+
+

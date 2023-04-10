@@ -1,0 +1,17 @@
+extends layout 
+
+block main-content
+
+  h1#h1 Club List
+
+  .nameContainer
+    each stat in league
+       .nameChild
+                p.statsP #{stat.team.name}
+                img(src= stat.team.logo width="100px" height="100px") 
+                p.statsP Points: #{stat.stats.points}
+                p.statsP Ranking: #{stat.stats.rank} 
+      
+
+
+
